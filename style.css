@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	font-family: helvetica;
+}
+
+.slideshow-container {
+	height: 400px;
+	width: 600px;
+	margin: auto;
+	position: relative;
+	box-shadow: 1px 1px 15px gray;
+}
+
+img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+h1 {
+	text-align: center;
+	padding: 50px;
+}
+
+.backward, .forward {
+	font-size: 50px;
+	padding: 20px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	color: white;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+	z-index: 10;
+}
+
+.backward {
+	left: 0;
+}
+
+.forward {
+	right: 0;
+}
